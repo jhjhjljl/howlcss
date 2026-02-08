@@ -315,3 +315,169 @@ var {
 wbr {
 	display: inline-block;
 }
+
+form {
+	margin-bottom: 2rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+input[type="url"],
+input[type="search"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+textarea {
+	font-family: inherit;
+	font-size: 1rem;
+	width: 100%;
+	padding: 0.75rem;
+	margin-bottom: 1.5rem;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	box-sizing: border-box;
+	background-color: #fff;
+	transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	width: 1.1rem;
+	height: 1.1rem;
+	margin-right: 0.5rem;
+	accent-color: #222;
+	vertical-align: middle;
+}
+
+input[type="range"] {
+	width: 100%;
+	margin-bottom: 1.5rem;
+	accent-color: #222;
+}
+
+input[type="color"] {
+	width: 50px;
+	height: 50px;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+	padding: 2px;
+	cursor: pointer;
+}
+
+input[type="file"] {
+	font-family: inherit;
+	margin-bottom: 1.5rem;
+}
+
+input[type="file"]::file-selector-button {
+	background: #eee;
+	border: 1px solid #ddd;
+	padding: 0.5rem 1rem;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-right: 1rem;
+}
+
+textarea {
+	min-height: 120px;
+	resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+	outline: none;
+	border-color: #222;
+	box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+}
+
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+input[type="image"] {
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 1rem;
+	background-color: #222;
+	color: #fff;
+	padding: 0.75rem 1.5rem;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: background-color 0.2s;
+}
+
+input[type="reset"] {
+	background-color: #f4f4f4;
+	color: #666;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+	background-color: #444;
+}
+
+button:active {
+	transform: translateY(1px);
+}
+
+label {
+	display: block;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+	color: #222;
+}
+
+select {
+	font-family: inherit;
+	font-size: 1rem;
+	width: 100%;
+	padding: 0.75rem;
+	margin-bottom: 1.5rem;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	background-color: #fff;
+	cursor: pointer;
+	appearance: none;
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+	background-repeat: no-repeat;
+	background-position: right 1rem center;
+	background-size: 1em;
+	transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+select:focus {
+	outline: none;
+	border-color: #222;
+	box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+}
+
+optgroup {
+	font-weight: 700;
+	font-style: normal;
+}
+
+fieldset {
+	border: 1px solid #eee;
+	border-radius: 8px;
+	padding: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+legend {
+	font-weight: 800;
+	padding: 0 0.5rem;
+	color: #222;
+}
+
+output {
+	font-family: ui-monospace, SFMono-Regular, monospace;
+	font-weight: 700;
+	color: #38b2ac;
+}
