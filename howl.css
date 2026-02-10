@@ -170,7 +170,7 @@
 	--caption-style:   italic;
 }
 
-/* body {
+body {
 	font-family: "Nunito";
 	font-size: 1.125rem;
 	max-width: 80ch;
@@ -178,4 +178,4 @@
 	padding-block: 0;
 	padding-inline: 1rem;
 	line-height: var(--global-line-height);
-} */
+}
