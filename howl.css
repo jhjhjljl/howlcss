@@ -13,169 +13,169 @@
 }
 
 :root {
-  /* =========================================
-     1. PRIMITIVE PALETTE (Your Sources)
-     ========================================= */
-  --palette-navy:    #1A3263; /* Primary, Text, Headings */
-  --palette-steel:   #547792; /* Secondary, Borders, Muted Text */
-  --palette-mustard: #FAB95B; /* Accents, Highlights, Warnings */
-  --palette-beige:   #E8E2DB; /* Backgrounds, Surfaces */
+/* =========================================
+1. PRIMITIVE PALETTE (Your Sources)
+========================================= */
+	--palette-navy:    #1A3263; /* Primary, Text, Headings */
+	--palette-steel:   #547792; /* Secondary, Borders, Muted Text */
+	--palette-mustard: #FAB95B; /* Accents, Highlights, Warnings */
+	--palette-beige:   #E8E2DB; /* Backgrounds, Surfaces */
 
-  /* Generated Neutrals & Variations */
-  --palette-white:   #ffffff; /* Inputs, Cards */
-  --palette-black:   #0d1931; /* Deepest Navy for high contrast */
-  --palette-navy-rgb: 26, 50, 99;   /* For opacity calculations */
-  --palette-steel-rgb: 84, 119, 146; /* For opacity calculations */
+	/* Generated Neutrals & Variations */
+	--palette-white:   #ffffff; /* Inputs, Cards */
+	--palette-black:   #0d1931; /* Deepest Navy for high contrast */
+	--palette-navy-rgb:  26, 50, 99;   /* For opacity calculations */
+	--palette-steel-rgb: 84, 119, 146; /* For opacity calculations */
 
-  /* =========================================
-     2. GLOBAL & SECTIONING ROOT (html, body)
-     ========================================= */
-  --global-bg:       var(--palette-beige);
-  --global-text:     var(--palette-navy);
-  --global-line-height: 1.6;
-  --global-radius:   4px; /* Softens the look */
-  --global-selection-bg: var(--palette-steel);
-  --global-selection-text: var(--palette-white);
+	/* =========================================
+	 2. GLOBAL & SECTIONING ROOT (html, body)
+	 ========================================= */
+	--global-bg:       var(--palette-beige);
+	--global-text:     var(--palette-navy);
+	--global-line-height: 1.6;
+	--global-radius:   4px; /* Softens the look */
+	--global-selection-bg: var(--palette-steel);
+	--global-selection-text: var(--palette-white);
 
-  /* =========================================
-     3. CONTENT SECTIONING
-     (header, footer, nav, article, section, aside)
-     ========================================= */
-  --surface-1:       var(--palette-beige);
-  --surface-2:       rgba(255, 255, 255, 0.5); /* Slightly lighter areas */
-  --surface-3:       var(--palette-white);     /* Cards, articles */
+	/* =========================================
+	 3. CONTENT SECTIONING
+	 (header, footer, nav, article, section, aside)
+	 ========================================= */
+	--surface-1:       var(--palette-beige);
+	--surface-2:       rgba(255, 255, 255, 0.5); /* Slightly lighter areas */
+	--surface-3:       var(--palette-white);     /* Cards, articles */
 
-  --nav-link:        var(--palette-navy);
-  --nav-link-hover:  var(--palette-steel);
-  --footer-bg:       var(--palette-navy);
-  --footer-text:     var(--palette-beige);
-  --separator-color: rgba(84, 119, 146, 0.3); /* Low opacity steel */
+	--nav-link:        var(--palette-navy);
+	--nav-link-hover:  var(--palette-steel);
+	--footer-bg:       var(--palette-navy);
+	--footer-text:     var(--palette-beige);
+	--separator-color: rgba(84, 119, 146, 0.3); /* Low opacity steel */
 
-  /* =========================================
-     4. TEXT CONTENT
-     (h1-h6, p, blockquote, pre, hr, lists)
-     ========================================= */
-  --heading-color:   var(--palette-navy);
-  --text-body:       var(--palette-navy);
-  --text-muted:      var(--palette-steel);
+	/* =========================================
+	 4. TEXT CONTENT
+	 (h1-h6, p, blockquote, pre, hr, lists)
+	 ========================================= */
+	--heading-color:   var(--palette-navy);
+	--text-body:       var(--palette-navy);
+	--text-muted:      var(--palette-steel);
 
-  /* Blockquotes */
-  --quote-border:    var(--palette-mustard);
-  --quote-bg:        rgba(84, 119, 146, 0.1);
-  --quote-text:      var(--palette-steel);
+	/* Blockquotes */
+	--quote-border:    var(--palette-mustard);
+	--quote-bg:        rgba(84, 119, 146, 0.1);
+	--quote-text:      var(--palette-steel);
 
-  /* Preformatted Text / Code Blocks */
-  --pre-bg:          var(--palette-navy);
-  --pre-text:        var(--palette-beige);
-  --pre-border:      var(--palette-steel);
+	/* Preformatted Text / Code Blocks */
+	--pre-bg:          var(--palette-navy);
+	--pre-text:        var(--palette-beige);
+	--pre-border:      var(--palette-steel);
 
-  /* Horizontal Rule */
-  --hr-color:        var(--palette-steel);
+	/* Horizontal Rule */
+	--hr-color:        var(--palette-steel);
 
-  /* Lists (ul, ol, dl) */
-  --list-bullet:     var(--palette-mustard);
-  --dt-color:        var(--palette-navy); /* Definition Term */
-  --dd-color:        var(--palette-steel); /* Definition Desc */
+	/* Lists (ul, ol, dl) */
+	--list-bullet:     var(--palette-mustard);
+	--dt-color:        var(--palette-navy); /* Definition Term */
+	--dd-color:        var(--palette-steel); /* Definition Desc */
 
-  /* =========================================
-     5. INLINE TEXT SEMANTICS
-     (a, code, kbd, mark, del, ins, time)
-     ========================================= */
-  /* Links */
-  --link-base:       var(--palette-steel);
-  --link-visited:    var(--palette-navy);
-  --link-hover:      var(--palette-mustard);
-  --link-active:     var(--palette-black);
+	/* =========================================
+	 5. INLINE TEXT SEMANTICS
+	 (a, code, kbd, mark, del, ins, time)
+	 ========================================= */
+	/* Links */
+	--link-base:       var(--palette-steel);
+	--link-visited:    var(--palette-navy);
+	--link-hover:      var(--palette-mustard);
+	--link-active:     var(--palette-black);
 
-  /* Code & Keyboard */
-  --code-inline-bg:  rgba(84, 119, 146, 0.15);
-  --code-inline-text:var(--palette-navy);
-  --kbd-bg:          var(--palette-navy);
-  --kbd-text:        var(--palette-white);
-  --kbd-border:      var(--palette-black);
+	/* Code & Keyboard */
+	--code-inline-bg:  rgba(84, 119, 146, 0.15);
+	--code-inline-text:var(--palette-navy);
+	--kbd-bg:          var(--palette-navy);
+	--kbd-text:        var(--palette-white);
+	--kbd-border:      var(--palette-black);
 
-  /* Highlights & Edits */
-  --mark-bg:         rgba(250, 185, 91, 0.5); /* Mustard 50% */
-  --del-color:       #a33b3b; /* Red-shifted Navy for semantic delete */
-  --ins-bg:          rgba(84, 119, 146, 0.2); /* Steel tint for insert */
-  --ins-text:        var(--palette-navy);
+	/* Highlights & Edits */
+	--mark-bg:         rgba(250, 185, 91, 0.5); /* Mustard 50% */
+	--del-color:       #a33b3b; /* Red-shifted Navy for semantic delete */
+	--ins-bg:          rgba(84, 119, 146, 0.2); /* Steel tint for insert */
+	--ins-text:        var(--palette-navy);
 
-  /* =========================================
-     6. TABLE CONTENT
-     (table, th, tr, td, caption)
-     ========================================= */
-  --table-border:    var(--palette-steel);
-  --table-header-bg: var(--palette-navy);
-  --table-header-txt:var(--palette-white);
-  --table-stripe-bg: rgba(84, 119, 146, 0.08); /* Zebra striping */
-  --table-hover-bg:  rgba(250, 185, 91, 0.15); /* Mustard hover */
-  --table-caption:   var(--palette-steel);
+	/* =========================================
+	 6. TABLE CONTENT
+	 (table, th, tr, td, caption)
+	 ========================================= */
+	--table-border:    var(--palette-steel);
+	--table-header-bg: var(--palette-navy);
+	--table-header-txt:var(--palette-white);
+	--table-stripe-bg: rgba(84, 119, 146, 0.08); /* Zebra striping */
+	--table-hover-bg:  rgba(250, 185, 91, 0.15); /* Mustard hover */
+	--table-caption:   var(--palette-steel);
 
-  /* =========================================
-     7. FORMS & INPUTS
-     (input, button, textarea, select, progress)
-     ========================================= */
-  /* Inputs, Textareas, Selects */
-  --input-bg:        var(--palette-white);
-  --input-text:      var(--palette-navy);
-  --input-border:    var(--palette-steel);
-  --input-placeholder: rgba(84, 119, 146, 0.6);
-  --input-focus-ring:var(--palette-mustard);
-  --input-disabled-bg: rgba(84, 119, 146, 0.1);
+	/* =========================================
+	 7. FORMS & INPUTS
+	 (input, button, textarea, select, progress)
+	 ========================================= */
+	/* Inputs, Textareas, Selects */
+	--input-bg:        var(--palette-white);
+	--input-text:      var(--palette-navy);
+	--input-border:    var(--palette-steel);
+	--input-placeholder: rgba(84, 119, 146, 0.6);
+	--input-focus-ring:var(--palette-mustard);
+	--input-disabled-bg: rgba(84, 119, 146, 0.1);
 
-  /* Buttons */
-  --btn-bg:          var(--palette-navy);
-  --btn-text:        var(--palette-white);
-  --btn-hover-bg:    var(--palette-steel);
-  --btn-active-bg:   var(--palette-black);
+	/* Buttons */
+	--btn-bg:          var(--palette-navy);
+	--btn-text:        var(--palette-white);
+	--btn-hover-bg:    var(--palette-steel);
+	--btn-active-bg:   var(--palette-black);
 
-  /* Secondary Button (Ghost style) */
-  --btn-sec-border:  var(--palette-navy);
-  --btn-sec-text:    var(--palette-navy);
+	/* Secondary Button (Ghost style) */
+	--btn-sec-border:  var(--palette-navy);
+	--btn-sec-text:    var(--palette-navy);
 
-  /* Range / Meter / Progress */
-  --progress-bg:     rgba(84, 119, 146, 0.2);
-  --progress-fill:   var(--palette-mustard);
-  --meter-optimum:   var(--palette-steel);
-  --meter-suboptimum:var(--palette-mustard);
+	/* Range / Meter / Progress */
+	--progress-bg:     rgba(84, 119, 146, 0.2);
+	--progress-fill:   var(--palette-mustard);
+	--meter-optimum:   var(--palette-steel);
+	--meter-suboptimum:var(--palette-mustard);
 
-  /* Labels & Fieldsets */
-  --label-text:      var(--palette-navy);
-  --fieldset-border: var(--palette-steel);
-  --legend-text:     var(--palette-navy);
+	/* Labels & Fieldsets */
+	--label-text:      var(--palette-navy);
+	--fieldset-border: var(--palette-steel);
+	--legend-text:     var(--palette-navy);
 
-  /* =========================================
-     8. INTERACTIVE ELEMENTS
-     (details, summary, dialog)
-     ========================================= */
-  /* Details & Summary */
-  --details-border:  var(--palette-steel);
-  --details-bg:      rgba(255, 255, 255, 0.5);
-  --summary-cursor:  pointer;
-  --summary-hover:   rgba(84, 119, 146, 0.1);
+	/* =========================================
+	 8. INTERACTIVE ELEMENTS
+	 (details, summary, dialog)
+	 ========================================= */
+	/* Details & Summary */
+	--details-border:  var(--palette-steel);
+	--details-bg:      rgba(255, 255, 255, 0.5);
+	--summary-cursor:  pointer;
+	--summary-hover:   rgba(84, 119, 146, 0.1);
 
-  /* Dialog / Modal */
-  --dialog-bg:       var(--palette-white);
-  --dialog-text:     var(--palette-navy);
-  --dialog-border:   var(--palette-navy);
-  --dialog-backdrop: rgba(26, 50, 99, 0.8); /* Navy with high opacity */
+	/* Dialog / Modal */
+	--dialog-bg:       var(--palette-white);
+	--dialog-text:     var(--palette-navy);
+	--dialog-border:   var(--palette-navy);
+	--dialog-backdrop: rgba(26, 50, 99, 0.8); /* Navy with high opacity */
 
-  /* =========================================
-     9. MEDIA & EMBEDDED
-     (figure, figcaption, img, canvas)
-     ========================================= */
-  --media-border:    var(--palette-steel);
-  --media-shadow:    0 4px 6px rgba(26, 50, 99, 0.15);
-  --caption-text:    var(--palette-steel);
-  --caption-style:   italic;
+	/* =========================================
+	 9. MEDIA & EMBEDDED
+	 (figure, figcaption, img, canvas)
+	 ========================================= */
+	--media-border:    var(--palette-steel);
+	--media-shadow:    0 4px 6px rgba(26, 50, 99, 0.15);
+	--caption-text:    var(--palette-steel);
+	--caption-style:   italic;
 }
 
-body {
+/* body {
 	font-family: "Nunito";
-   font-size: 1.125rem;
+	font-size: 1.125rem;
 	max-width: 80ch;
-   margin: 0 auto;
-   padding-block: 0;
-   padding-inline: 1rem;
+	margin: 0 auto;
+	padding-block: 0;
+	padding-inline: 1rem;
 	line-height: var(--global-line-height);
-}
+} */
