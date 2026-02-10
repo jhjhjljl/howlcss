@@ -1,10 +1,15 @@
 :root {
-	--color-black-1: #222;
-	--color-black-2: #333;
-	--color-navy: #362F4F;
-	--color-purple: #5B23FF;
-	--color-sky: #008BFF;
-	--color-yellow: #E4FF30;
+  --color-navy: #362F4F;
+  --color-purple: #5B23FF;
+  --color-sky: #008BFF;
+  --color-yellow: #E4FF30;
+  --text-heading: #1A1626;
+  --text-body: #322D41;
+  --text-muted: #6B6681;
+  --text-disabled: #A9A7B5;
+  --hr-line: #E2E1E9;
+  --bg-offset: #F8F7FA;
+  --shadow-color: rgba(26, 22, 38, 0.1);
 }
 
 @font-face {
@@ -28,11 +33,13 @@ body {
 	margin: 0 auto;
 	padding: 0 1rem;
 	letter-spacing: 0.01rem;
-	color: var(--color-black-2);
+	color: var(--text-body);
+	font-size: 1.125rem;
 }
 
 address {
 	font-style: normal;
+	color: var(--text-muted);
 }
 
 address a[href^="mailto"]::before {
@@ -43,20 +50,22 @@ address a[href^="tel"]::before {
 	content: "📞 ";
 }
 
+article {
+
+}
+
 aside {
 
 }
 
 footer {
-	color: var(--color-yellow);
-	background-color: var(--color-navy);
-	text-align: center;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 900;
 	line-height: 1.2;
-	color: var(--color-black-1);
+	color: var(--text-heading);
 }
 
 h1 {
@@ -86,4 +95,32 @@ h5 {
 h6 {
 	font-size: 1rem;
 	margin-block: 1rem;
+}
+
+hgroup {
+	margin-block: 2.5rem;
+}
+
+hgroup * {
+	margin-block: 0;
+}
+
+hgroup *:not(h1) {
+	color: var(--text-muted);
+}
+
+main {
+
+}
+
+nav {
+
+}
+
+section {
+
+}
+
+search {
+
 }
