@@ -271,3 +271,15 @@ pre {
 ul {
 
 }
+
+a {
+	color: var(--howl-golden-brown);
+	text-decoration-color: var(--howl-golden-brown);
+	text-underline-offset: 4px;
+	transition: all ease 0.2s;
+}
+
+a:hover {
+	color: var(--howl-soft-dark);
+	text-decoration-color: var(--howl-soft-dark);
+}
