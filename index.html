@@ -15,6 +15,7 @@
 		<p>Howl leaves no tag behind. While other frameworks only style the basics, Howl provides 100% coverage for every element in the <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements">MDN reference</a>. If it's valid HTML, it's already styled and ready to go.</p>
 		<p>Howl is perfect for prototyping and honing your semantic HTML skills. However, please avoid using it in production, as classless CSS has inherent scaling limitations. It’s a great way to rediscover the power of native HTML elements instead of relying on <code>&lt;div&gt;</code> containers for everything.</p>
 	</header>
+	<hr>
 	<main>
 		<section>
 			<h2 id="content-sectioning">Content sectioning</h2>
@@ -156,22 +157,54 @@
 			<article>
 				<h3><code>&lt;hr&gt;</code></h3>
 				<p>Represents a thematic break between paragraph-level elements: for example, a change of scene in a story, or a shift of topic within a section.</p>
+				<p>This is the end of the first section.</p>
+				<hr>
+				<p>The horizontal rule above provides a clean break.</p>
 			</article>
 			<article>
 				<h3><code>&lt;li&gt;</code></h3>
 				<p>Represents an item in a list. It must be contained in a parent element: an ordered list (<code>&lt;ol&gt;</code>), an unordered list (<code>&lt;ul&gt;</code>), or a menu (<code>&lt;menu&gt;</code>). In menus and unordered lists, list items are usually displayed using bullet points. In ordered lists, they are usually displayed with an ascending counter on the left, such as a number or letter.</p>
+				<ul>
+					<li>Neil Armstrong</li>
+					<li>Alan Bean</li>
+					<li>Peter Conrad</li>
+					<li>Edgar Mitchell</li>
+					<li>Alan Shepard</li>
+				</ul>
+				<ol>
+					<li>Neil Armstrong</li>
+					<li>Alan Bean</li>
+					<li>Peter Conrad</li>
+					<li>Edgar Mitchell</li>
+					<li>Alan Shepard</li>
+				</ol>
 			</article>
 			<article>
 				<h3><code>&lt;menu&gt;</code></h3>
 				<p>A semantic alternative to <code>&lt;ul&gt;</code>, but treated by browsers (and exposed through the accessibility tree) as no different than <code>&lt;ul&gt;</code>. It represents an unordered list of items (which are represented by <code>&lt;li&gt;</code> elements).</p>
+				<menu>
+					<li>Neil Armstrong</li>
+					<li>Alan Bean</li>
+					<li>Peter Conrad</li>
+					<li>Edgar Mitchell</li>
+					<li>Alan Shepard</li>
+				</menu>
 			</article>
 			<article>
 				<h3><code>&lt;ol&gt;</code></h3>
 				<p>Represents an ordered list of items — typically rendered as a numbered list.</p>
+				<ol>
+					<li>Neil Armstrong</li>
+					<li>Alan Bean</li>
+					<li>Peter Conrad</li>
+					<li>Edgar Mitchell</li>
+					<li>Alan Shepard</li>
+				</ol>
 			</article>
 			<article>
 				<h3><code>&lt;p&gt;</code></h3>
 				<p>Represents a paragraph. Paragraphs are usually represented in visual media as blocks of text separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can be any structural grouping of related content, such as images or form fields.</p>
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse vel eos facilis iusto voluptatem, expedita sint quae beatae temporibus aliquid delectus ipsam dolor repellendus repudiandae eius commodi quo corporis accusamus?</p>
 			</article>
 			<article>
 				<h3><code>&lt;pre&gt;</code></h3>
@@ -180,8 +213,16 @@
 			<article>
 				<h3><code>&lt;ul&gt;</code></h3>
 				<p>Represents an unordered list of items, typically rendered as a bulleted list.</p>
+				<ul>
+					<li>Neil Armstrong</li>
+					<li>Alan Bean</li>
+					<li>Peter Conrad</li>
+					<li>Edgar Mitchell</li>
+					<li>Alan Shepard</li>
+				</ul>
 			</article>
 		</section>
+		<hr>
 		<section>
 			<h2 id="inline-text-semantics">Inline text semantics</h2>
 			<p>Use the HTML inline text semantic to define the meaning, structure, or style of a word, line, or any arbitrary piece of text.</p>
