@@ -20,22 +20,57 @@
 	font-weight: 200 900;
 }
 
+html {
+	font-size: 110%;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+
 body {
 	font-family: "Nunito";
 	line-height: 1.6;
-	font-size: 1.1rem;
+	margin: 0 auto;
+	padding-inline: 1rem;
+	background-color: var(--howl-warm-white);
+	color: var(--howl-soft-dark);
+	max-width: 70ch;
 }
-/*
+
 h1, h2, h3, h4, h5, h6 {
 	color: var(--howl-hard-dark);
 	line-height: 1.2;
 	font-weight: 800;
+	margin-top: 2.5rem;
+	margin-bottom: 0.5rem;
 }
 
 h1 {
-	font-size: 3.05rem;
+	font-size: 2.5rem;
 }
 
-a {
-	color: var(--howl-golden-brown);
-} */
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+h4 {
+	font-size: 1.25rem;
+}
+
+h5 {
+	font-size: 1rem;
+}
+
+h6 {
+	font-size: 0.75rem;
+}
+
+p {
+	margin-top: 0;
+}
