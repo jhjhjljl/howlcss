@@ -122,7 +122,7 @@ hgroup * {
 	margin: 0;
 }
 
-hgroup p {
+hgroup > :first-child ~ * {
 	color: var(--howl-golden-brown);
 	font-style: italic;
 	line-height: 1.2;
