@@ -33,15 +33,15 @@
 				</address>
 			</article>
 			<article>
-				<h3><code>&lt;article&gt;</code></h3>
+				<h3><code><s>&lt;article&gt;</s></code></h3>
 				<p>Represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication). Examples include a forum post, a magazine or newspaper article, a blog entry, a product card, a user-submitted comment, an interactive widget or gadget, or any other independent item of content.</p>
 			</article>
 			<article>
-				<h3><code>&lt;aside&gt;</code></h3>
+				<h3><code><s>&lt;aside&gt;</s></code></h3>
 				<p>Represents a portion of a document whose content is only indirectly related to the document's main content. Asides are frequently presented as sidebars or call-out boxes.</p>
 			</article>
 			<article>
-				<h3><code>&lt;footer&gt;</code></h3>
+				<h3><code><s>&lt;footer&gt;</s></code></h3>
 				<p>Represents a footer for its nearest ancestor sectioning content or sectioning root element. A <code>&lt;footer&gt;</code> typically contains information about the author of the section, copyright data, or links to related documents.</p>
 			</article>
 			<article>
@@ -852,14 +852,40 @@ Error: Stress limit exceeded.</samp></pre>
 			<article>
 				<h3><code>&lt;button&gt;</code></h3>
 				<p>An interactive element activated by a user with a mouse, keyboard, finger, voice command, or other assistive technology. Once activated, it performs an action, such as submitting a <code>form</code> or opening a dialog.</p>
+				<button>Generate Report</button>
+				<button disabled>Draft Locked</button>
 			</article>
 			<article>
 				<h3><code>&lt;datalist&gt;</code></h3>
 				<p>Contains a set of <code>&lt;option&gt;</code> elements that represent the permissible or recommended options available to choose from within other controls.</p>
+				<label for="ice-cream-choice">Choose a flavor:</label>
+				<input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice">
+				<datalist id="ice-cream-flavors">
+					<option value="Chocolate"></option>
+					<option value="Coconut"></option>
+					<option value="Mint"></option>
+					<option value="Strawberry"></option>
+					<option value="Vanilla"></option>
+				</datalist>
 			</article>
 			<article>
 				<h3><code>&lt;fieldset&gt;</code></h3>
 				<p>Used to group several controls as well as labels (<code>&lt;label&gt;</code>) within a web form.</p>
+				<fieldset>
+					<legend>Choose your favorite monster</legend>
+					<div>
+						<input type="radio" id="kraken" name="monster" value="kraken" checked>
+						<label for="kraken">Kraken</label>
+					</div>
+					<div>
+						<input type="radio" id="sasquatch" name="monster" value="sasquatch">
+						<label for="sasquatch">Sasquatch</label>
+					</div>
+					<div>
+						<input type="radio" id="mothman" name="monster" value="mothman">
+						<label for="mothman">Mothman</label>
+					</div>
+				</fieldset>
 			</article>
 			<article>
 				<h3><code>&lt;form&gt;</code></h3>
@@ -868,6 +894,25 @@ Error: Stress limit exceeded.</samp></pre>
 			<article>
 				<h3><code>&lt;input&gt;</code></h3>
 				<p>Used to create interactive controls for web-based forms to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. The <code>&lt;input&gt;</code> element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes.</p>
+				<div>
+					<input type="button" value="button">
+					<input type="submit" value="submit">
+				</div>
+				<fieldset>
+					<legend>Project Status</legend>
+					<div>
+						<input type="checkbox" id="foundation-complete" checked>
+						<label for="foundation-complete">Foundation Complete</label>
+					</div>
+					<div>
+						<input type="checkbox" id="framing-inspection">
+						<label for="framing-inspection">Framing Inspection</label>
+					</div>
+					<div>
+						<input type="checkbox" id="electrical-rough-in">
+						<label for="electrical-rough-in">Electrical Rough-in</label>
+					</div>
+				</fieldset>
 			</article>
 			<article>
 				<h3><code>&lt;label&gt;</code></h3>
