@@ -481,7 +481,7 @@ Error: Stress limit exceeded.</samp></pre>
 					type="video/mp4"
 					data="./placeholder-video.mp4"
 					width="500"
-					height="500"></object>
+					height="400"></object>
 			</article>
 			<article>
 				<h3><code>&lt;picture&gt;</code></h3>
@@ -508,10 +508,23 @@ Error: Stress limit exceeded.</samp></pre>
 			<article>
 				<h3><code>&lt;svg&gt;</code></h3>
 				<p>Container defining a new coordinate system and <code>viewport</code>. It is used as the outermost element of SVG documents, but it can also be used to embed an SVG fragment inside an SVG or HTML document.</p>
+				<svg viewBox="0 0 100 100" width="100" height="100">
+					<circle cx="50" cy="50" r="40" />
+				</svg>
 			</article>
 			<article>
 				<h3><code>&lt;math&gt;</code></h3>
 				<p>The top-level element in MathML. Every valid MathML instance must be wrapped in it. In addition, you must not nest a second <code>&lt;math&gt;</code> element in another, but you can have an arbitrary number of other child elements in it.</p>
+				<math>
+					<mrow>
+					<mi>E</mi>
+					<mo>=</mo>
+					<mi>m</mi>
+					<msup>
+						<mi>c</mi>
+				 		<mn>2</mn>
+				  	</msup>
+				</math>
 			</article>
 		</section>
 		<section>
@@ -536,10 +549,12 @@ Error: Stress limit exceeded.</samp></pre>
 			<article>
 				<h3><code>&lt;del&gt;</code></h3>
 				<p>Represents a range of text that has been deleted from a document. This can be used when rendering "track changes" or source code diff information, for example. The <code>&lt;ins&gt;</code> element can be used for the opposite purpose: to indicate text that has been added to the document.</p>
+				<p>The final site survey shows the foundation is <del>40 meters</del> <ins>42 meters</ins> from the north boundary.</p>
 			</article>
 			<article>
 				<h3><code>&lt;ins&gt;</code></h3>
 				<p>Represents a range of text that has been added to a document. You can use the <code>&lt;del&gt;</code> element to similarly represent a range of text that has been deleted from the document.</p>
+				<p>Project Status: <del>In Review</del> <ins>Approved for Construction</ins></p>
 			</article>
 		</section>
 		<section>
@@ -548,42 +563,287 @@ Error: Stress limit exceeded.</samp></pre>
 			<article>
 				<h3><code>&lt;caption&gt;</code></h3>
 				<p>Specifies the caption (or title) of a table.</p>
+				<table>
+					<caption>Project Material Schedule</caption>
+					<colgroup>
+						<col>
+						<col>
+						<col>
+					</colgroup>
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>Material Description</th>
+							<th>Supplier Status</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>ST-01</td>
+							<td>Structural Steel - Grade 50</td>
+							<td><ins>On-Site</ins></td>
+						</tr>
+						<tr>
+							<td>CON-04</td>
+							<td>High-Performance Concrete</td>
+							<td><del>Delayed</del></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="2">Total Line Items</td>
+							<td>2 Units</td>
+						</tr>
+					</tfoot>
+				</table>
 			</article>
 			<article>
 				<h3><code>&lt;col&gt;</code></h3>
 				<p>Defines one or more columns in a column group represented by its implicit or explicit parent <code>&lt;colgroup&gt;</code> element. The <code>&lt;col&gt;</code> element is only valid as a child of a <code>&lt;colgroup&gt;</code> element that has no <code>span</code> attribute defined.</p>
+				<table>
+					<colgroup>
+						<col style="width: 10%;">
+						<col style="width: 20%;">
+						<col style="width: 50%;">
+						<col style="width: 20%;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>Mark</th>
+							<th>Dimensions</th>
+							<th>Glazing Specification</th>
+							<th>Status</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>W-01</td>
+							<td>1200 x 1500</td>
+							<td>Double Glazed, Low-E Coating</td>
+							<td><ins>Ordered</ins></td>
+						</tr>
+						<tr>
+							<td>W-02</td>
+							<td>1800 x 2100</td>
+							<td><del>Tempered Glass</del> Laminated Safety</td>
+							<td><ins>On-Site</ins></td>
+						</tr>
+						<tr>
+							<td>W-03</td>
+							<td>600 x 600</td>
+							<td>Frosted Privacy Glass</td>
+							<td><del>Backordered</del></td>
+						</tr>
+					</tbody>
+				</table>
 			</article>
 			<article>
 				<h3><code>&lt;colgroup&gt;</code></h3>
 				<p>Defines a group of columns within a table.</p>
+				<table>
+	<caption>Hardware Specifications</caption>
+	<thead>
+		<tr>
+			<th>Component</th>
+			<th>Material</th>
+			<th>Finish</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Door Lever</td>
+			<td>Solid Brass</td>
+			<td>Brushed Chrome</td>
+		</tr>
+		<tr>
+			<td>Hinges</td>
+			<td>Stainless Steel</td>
+			<td>Satin</td>
+		</tr>
+		<tr>
+			<td>Strike Plate</td>
+			<td>Steel</td>
+			<td><ins>Zinc Plated</ins></td>
+		</tr>
+	</tbody>
+</table>
 			</article>
 			<article>
 				<h3><code>&lt;table&gt;</code></h3>
 				<p>Represents tabular data—that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data.</p>
+				<table>
+	<thead>
+		<tr>
+			<th>Task</th>
+			<th>Lead</th>
+			<th>Deadline</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Site Survey</td>
+			<td>J. Wright</td>
+			<td>Feb 15</td>
+		</tr>
+		<tr>
+			<td>Soil Test</td>
+			<td>M. Chen</td>
+			<td><ins>Feb 18</ins></td>
+		</tr>
+		<tr>
+			<td>Permit Filing</td>
+			<td>S. Rossi</td>
+			<td><del>Feb 20</del> Feb 22</td>
+		</tr>
+	</tbody>
+</table>
 			</article>
 			<article>
 				<h3><code>&lt;tbody&gt;</code></h3>
 				<p>Encapsulates a set of table rows (<code>&lt;tr&gt;</code> elements), indicating that they comprise the body of a table's (main) data.</p>
+				<table>
+	<caption>Concrete Strength Grades</caption>
+	<tbody>
+		<tr>
+			<th>Grade C20</th>
+			<td>20 N/mm²</td>
+			<td>Domestic Floors</td>
+		</tr>
+		<tr>
+			<th>Grade C30</th>
+			<td>30 N/mm²</td>
+			<td>Pavement & Drives</td>
+		</tr>
+		<tr>
+			<th>Grade C40</th>
+			<td>40 N/mm²</td>
+			<td>Commercial Foundations</td>
+		</tr>
+	</tbody>
+</table>
 			</article>
 			<article>
 				<h3><code>&lt;td&gt;</code></h3>
 				<p>A child of the <code>&lt;tr&gt;</code> element, it defines a cell of a table that contains data.</p>
+				<table>
+	<caption>Floor Finish Schedule</caption>
+	<colgroup>
+		<col>
+		<col>
+		<col>
+	</colgroup>
+	<thead>
+		<tr>
+			<th>Room</th>
+			<th>Finish</th>
+			<th>Installation Notes</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>101</td>
+			<td>Polished Conc.</td>
+			<td>Sealant to be applied in two coats minimum.</td>
+		</tr>
+		<tr>
+			<td>102</td>
+			<td>Oak Timber</td>
+			<td>Acclimatize on-site for 48 hours prior to install.</td>
+		</tr>
+	</tbody>
+</table>
 			</article>
 			<article>
 				<h3><code>&lt;tfoot&gt;</code></h3>
 				<p>Encapsulates a set of table rows (<code>&lt;tr&gt;</code> elements), indicating that they comprise the foot of a table with information about the table's columns. This is usually a summary of the columns, e.g., a sum of the given numbers in a column.</p>
+				<table>
+	<caption>Labour Hours: Feb 12</caption>
+	<thead>
+		<tr>
+			<th>Trade</th>
+			<th>Hours</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Carpentry</td>
+			<td>16</td>
+		</tr>
+		<tr>
+			<td>Electrical</td>
+			<td>8</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<td>Total</td>
+			<td>24</td>
+		</tr>
+	</tfoot>
+</table>
 			</article>
 			<article>
 				<h3><code>&lt;th&gt;</code></h3>
 				<p>A child of the <code>&lt;tr&gt;</code> element, it defines a cell as the header of a group of table cells. The nature of this group can be explicitly defined by the <code>scope</code> and <code>headers</code> attributes.</p>
+				<table>
+	<tbody>
+		<tr>
+			<td>Site</td>
+			<td><ins>Active</ins></td>
+		</tr>
+		<tr>
+			<td>Safety</td>
+			<td><ins>Pass</ins></td>
+		</tr>
+		<tr>
+			<td>Audit</td>
+			<td><del>Pending</del></td>
+		</tr>
+	</tbody>
+</table>
 			</article>
 			<article>
 				<h3><code>&lt;thead&gt;</code></h3>
 				<p>Encapsulates a set of table rows (<code>&lt;tr&gt;</code> elements), indicating that they comprise the head of a table with information about the table's columns. This is usually in the form of column headers (<code>&lt;th&gt;</code> elements). </p>
+				<table>
+	<caption>Unit 04</caption>
+	<thead>
+		<tr>
+			<th>Width</th>
+			<th>Height</th>
+			<th>Depth</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1200mm</td>
+			<td>2400mm</td>
+			<td>450mm</td>
+		</tr>
+	</tbody>
+</table>
 			</article>
 			<article>
 				<h3><code>&lt;tr&gt;</code></h3>
 				<p>Defines a row of cells in a table. The row's cells can then be established using a mix of <code>&lt;td&gt;</code> (data cell) and <code>&lt;th&gt;</code> (header cell) elements.</p>
+				<table>
+	<thead>
+		<tr>
+			<th>Consultant</th>
+			<th>Contact</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Lead Arch</td>
+			<td>Ext. 402</td>
+		</tr>
+		<tr>
+			<td>Structural</td>
+			<td>Ext. 509</td>
+		</tr>
+	</tbody>
+</table>
 			</article>
 		</section>
 		<section>

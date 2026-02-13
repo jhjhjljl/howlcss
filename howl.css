@@ -34,6 +34,11 @@
 	font-weight: 100 800;
 }
 
+@font-face {
+	font-family: "Latin Modern Math";
+	src: url("./LatinModernMath.otf");
+}
+
 html {
 	font-size: 110%;
 }
@@ -211,7 +216,7 @@ figure {
 	margin-block: 2rem;
 }
 
-figure :is(img, audio, embed) {
+figure :is(img, audio, embed, svg) {
 	margin-inline: auto;
 }
 
@@ -366,7 +371,7 @@ kbd {
 }
 
 mark {
-	background-color: var(--howl-golden-brown);
+	background-color: #dce472;
 	border-radius: 2px;
 	padding-inline: 0.3rem;
 }
@@ -464,4 +469,99 @@ video::cue {
 embed {
 	display: block;
 	max-width: 100%;
+}
+
+fencedframe {
+
+}
+
+iframe {
+
+}
+
+object {
+
+}
+
+picture {
+
+}
+
+source {
+
+}
+
+svg {
+	max-width: 100%;
+	display: block;
+}
+
+math {
+	font-family: "Latin Modern Math";
+	display: block;
+	font-size: 1.2rem;
+}
+
+canvas {
+
+}
+
+noscript {
+
+}
+
+script {
+
+}
+
+del {
+	background-color: #ffdce0;
+	padding-inline: 0.3rem;
+	border-radius: 2px;
+	text-decoration-thickness: 2px;
+}
+
+ins {
+	background-color: #afefc1;
+	padding-inline: 0.3rem;
+	border-radius: 2px;
+	text-decoration: none
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 2rem 0;
+	font-variant-numeric: tabular-nums;
+}
+
+caption {
+	text-align: left;
+	font-weight: 800;
+	color: var(--howl-golden-brown);
+	margin-bottom: 0.75rem;
+	font-size: 0.85em;
+	text-transform: uppercase;
+	letter-spacing: 0.03rem;
+}
+
+th, td {
+	padding: 0.75rem;
+	border: 1px solid var(--howl-light-grey);
+	text-align: left;
+}
+
+thead th {
+	border-bottom: 2px solid var(--howl-golden-brown);
+	font-size: 0.85rem;
+	font-weight: 800;
+}
+
+tfoot {
+  font-weight: 800;
+  background-color: var(--howl-warm-white);
+}
+
+tfoot td {
+  border-top: 2px solid var(--howl-soft-dark);
 }
